@@ -6,7 +6,7 @@
 	import type { Theme } from 'svelte-dark-mode/types/DarkMode.svelte';
 
     let theme: Theme | undefined;
-    let cards: { name: string, place: string, lngLat: [number, number] }[];
+    let cards: { name: string, link: string, place: string, issuer: string, lngLat: [number, number] }[];
 
     $: switchTheme = (theme === "dark" ? "light" : "dark") as Theme;
     
@@ -39,13 +39,15 @@
   style="data/style_{theme}.json"
   let:map
 >
-    {#each Object.entries(cards) as [id, { name, place, lngLat }]} 
+    {#each Object.entries(cards) as [id, { name, link, place, issuer, lngLat }]} 
         <Marker {lngLat} class="w-14 h-14" >
             <img src="img/cards/{id}.png" alt="{name}" class="drop-shadow-xl">
 
             <Popup openOn="click" offset={[0, -20]}>
-                <div class="text-xl font-bold">{name}</div>
-                <div class="text-md italic">{place}</div>
+                <a href="{link}" target="_blank">
+                    <h2 class="text-xl font-bold">{name}</h2>
+                </a>
+                <p class="text-md italic">{place}</p>
             </Popup>
         </Marker>
     {/each}

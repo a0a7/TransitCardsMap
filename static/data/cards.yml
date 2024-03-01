@@ -1,10 +1,70 @@
 # Cards:
 metrocard:
-  name: MTA MetroCard
-  place: New York City, NY, USA
+  name: MetroCard
+  link: https://en.wikipedia.org/wiki/MetroCard
+  place: New York City
+  issuer: MTA
   lngLat: [-73.935242, 40.730610]
 
 slkort:
   name: SL-kortet
-  place: Stockholm, Sweden
+  linl: https://sl.se/biljetter/sa-koper-du-biljetten/sl-kortet/
+  place: Stockholm
+  issuer: SL (Stockholms Lokaltrafik)
   lngLat: [18.063240, 59.334591]
+
+pasmo:
+  name: PASMO (パスモ)
+  link: https://en.wikipedia.org/wiki/Pasmo
+  place: Greater Tokyo Area
+  issuer: JR East
+  lngLat: [139.839478, 35.652832]
+
+nimoca:
+  name: nimoca (ニモカ)
+  link: https://en.wikipedia.org/wiki/Nimoca
+  place: Fukuoka
+  issuer: Nishi-Nippon Railroad
+  lngLat: [130.39716772915006, 33.673867398225106]
+
+suica:
+  name: Suica (スイカ)
+  link: https://en.wikipedia.org/wiki/Suica
+  place: Tokyo, Sendai & Niigata 
+  issuer: JR East
+  lngLat: [140.869415, 38.268223]
+
+icoca:
+  name: ICOCA (イコカ)
+  link: https://en.wikipedia.org/wiki/ICOCA
+  place: Kansai
+  issuer: JR West
+  lngLat: [135.502165, 34.693738]
+
+toica:
+  name: TOICA (トイカ)
+  link: https://en.wikipedia.org/wiki/TOICA
+  place: Nagoya
+  issuer: JR Central
+  lngLat: [136.90641, 35.18147]
+
+sugoca:
+  name: SUGOCA (スゴカ)
+  link: https://en.wikipedia.org/wiki/SUGOCA
+  place: Fukuoka
+  issuer: JR Kyushu
+  lngLat: [130.65738228347203, 33.59753694045956]
+
+hayakaken:
+  name: Hayakaken (ハヤカケン)
+  link: https://en.wikipedia.org/wiki/Hayakaken
+  place: Fukuoka
+  issuer: Fukuoka City Transportation Bureau
+  lngLat: [130.23696169822304, 33.58475268101628]
+
+kitaca:
+  name: Kitaca (キタカ)
+  link: https://en.wikipedia.org/wiki/Kitaca
+  place: Hokkaido
+  issuer: JR Hokkaido
+  lngLat: [141.34694, 43.06417]
