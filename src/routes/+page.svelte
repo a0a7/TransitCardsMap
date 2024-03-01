@@ -19,14 +19,10 @@
     <NavigationControl position="top-left" />
     <FullscreenControl position="top-left" />
     <ScaleControl />
-    <Control class="flex flex-col gap-y-2">
+    <Control class="flex flex-col gap-y-2" position="top-left">
         <ControlGroup>
-            <ControlButton on:click={() => {theme = switchTheme}}>
-            {#if theme === "dark"}
-                Light
-            {:else}
-                Dark
-            {/if}
+            <ControlButton on:click={() => {theme = switchTheme}} >
+                <img src="img/icons/switch_from_{theme}.svg" alt="Switch Theme" class="w-5 h-5" title="Switch theme"/>
             </ControlButton>
         </ControlGroup>
     </Control>
