@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { MapLibre, NavigationControl, GeolocateControl, FullscreenControl, ScaleControl, Control, ControlGroup, ControlButton } from 'svelte-maplibre';
+    import { MapLibre, NavigationControl, Marker,  Popup, FullscreenControl, ScaleControl, Control, ControlGroup, ControlButton } from 'svelte-maplibre';
     import DarkMode from "svelte-dark-mode";
     import { parse } from 'yaml';
     import { onMount } from 'svelte';
 	import type { Theme } from 'svelte-dark-mode/types/DarkMode.svelte';
 
     let theme: Theme | undefined;
-    let cards: Object[];
+    let cards: { name: string, place: string, lngLat: [number, number] }[];
 
     $: switchTheme = (theme === "dark" ? "light" : "dark") as Theme;
     
@@ -33,12 +33,22 @@
 <DarkMode bind:theme />
 
 <MapLibre 
-  center={[0,30]}
+  center={[15,35]}
   zoom={2}
   class="map"
   style="data/style_{theme}.json"
   let:map
 >
+    {#each Object.entries(cards) as [id, { name, place, lngLat }]} 
+        <Marker {lngLat} class="w-14 h-14" >
+            <img src="img/cards/{id}.png" alt="{name}" class="drop-shadow-xl">
+
+            <Popup openOn="click" offset={[0, -20]}>
+                <div class="text-xl font-bold">{name}</div>
+                <div class="text-md italic">{place}</div>
+            </Popup>
+        </Marker>
+    {/each}
     <NavigationControl position="top-left" />
     <FullscreenControl position="top-left" />
     <ScaleControl />
@@ -50,6 +60,7 @@
         </ControlGroup>
     </Control>
 </MapLibre>
+
 <style>
     :global(.map) {
       height: 100vh;
