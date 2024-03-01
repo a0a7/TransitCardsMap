@@ -7,6 +7,13 @@
     $: switchTheme = theme === "dark" ? "light" : "dark";    
 </script>
 
+<svelte:head>
+    <title>Transit Card Map</title> 
+    <meta name="description" content="Gallery of transit fare cards worldwide.">
+    <meta name="keywords" content="Transit, Cards, Map">
+    <meta name="author" content="Alexander Akira Weimer">
+</svelte:head>
+
 <DarkMode bind:theme />
 
 <MapLibre 
