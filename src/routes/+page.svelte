@@ -2,37 +2,37 @@
     import { MapLibre, NavigationControl, GeolocateControl, FullscreenControl, ScaleControl, Control, ControlGroup, ControlButton } from 'svelte-maplibre';
     import DarkMode from "svelte-dark-mode";
     
-    let style: string;
+    let theme: any ;
 
-    $: switchStyle = style === "dark" ? "light" : "dark";    
+    $: switchTheme = theme === "dark" ? "light" : "dark";    
 </script>
+
+<DarkMode bind:theme />
 
 <MapLibre 
   center={[0,30]}
   zoom={2}
   class="map"
-  style="" 
+  style="data/style_{theme}.json"
   let:map
 >
-<NavigationControl position="top-left" />
-<GeolocateControl position="top-left" fitBoundsOptions={{ maxZoom: 12 }} />
-<FullscreenControl position="top-left" />
-<ScaleControl />
-<Control class="flex flex-col gap-y-2">
-    <ControlGroup>
-        <ControlButton on:click={() => {style = switchStyle}}>
-        {#if style === "dark"}
-            Light
-        {:else}
-            Dark
-        {/if}
-        </ControlButton>
-    </ControlGroup>
-</Control>
-
-<style>
-  :global(.map) {
-    height: 100vh;
-  }
-</style>
+    <NavigationControl position="top-left" />
+    <FullscreenControl position="top-left" />
+    <ScaleControl />
+    <Control class="flex flex-col gap-y-2">
+        <ControlGroup>
+            <ControlButton on:click={() => {theme = switchTheme}}>
+            {#if theme === "dark"}
+                Light
+            {:else}
+                Dark
+            {/if}
+            </ControlButton>
+        </ControlGroup>
+    </Control>
 </MapLibre>
+<style>
+    :global(.map) {
+      height: 100vh;
+    }
+  </style>
