@@ -68,3 +68,31 @@ kitaca:
   place: Hokkaido
   issuer: JR Hokkaido
   lngLat: [141.34694, 43.06417]
+
+pitapa:
+  name: PiTaPa (ピタパ)
+  link: https://en.wikipedia.org/wiki/PiTaPa
+  place: Kansai
+  issuer: Surutto KANSAI Conference
+  lngLat: [135.74378490952535, 34.970678047024194] 
+
+nicepass:
+  name: NicePass (ナイスパス)
+  link: https://en.wikipedia.org/wiki/NicePass
+  place: Hamamatsu
+  issuer: Enshū Railway
+  lngLat: [137.7123767702264, 34.73984767075227]
+
+luluca:
+  name: LuluCa (ルルカ)
+  link: https://en.wikipedia.org/wiki/LuLuCa
+  place: Shizuoka
+  issuer: Shizuoka Railway Group
+  lngLat: [138.38560374357326, 34.97288055273272]
+
+manaca:
+  name: manaca (マナカ)
+  link: https://en.wikipedia.org/wiki/Manaca
+  place: Nagoya
+  issuer: City of Nagoya Transportation Bureau
+  lngLat: [136.95853578715864, 35.27267615632285]
