@@ -31,4 +31,4 @@
     :global(.map) {
       height: 100vh;
     }
-  </style>
+</style>
