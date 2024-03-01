@@ -1,0 +1,4 @@
+balls:
+  - ball: "Poke Ball"
+    price: 200
+    description: "A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system."

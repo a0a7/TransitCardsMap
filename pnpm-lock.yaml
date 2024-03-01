@@ -8,6 +8,9 @@ dependencies:
   svelte-maplibre:
     specifier: ^0.8.1
     version: 0.8.1(svelte@4.2.12)
+  yaml:
+    specifier: ^2.4.0
+    version: 2.4.0
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -2920,7 +2923,6 @@ packages:
     resolution: {integrity: sha512-j9iR8g+/t0lArF4V6NE/QCfT+CO7iLqrXAHZbJdo+LfjqP1vR8Fg5bSiaq6Q2lOD1AUEVrEVIgABvBFYojJVYQ==}
     engines: {node: '>= 14'}
     hasBin: true
-    dev: true
 
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}

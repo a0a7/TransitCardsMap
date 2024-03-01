@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-maplibre": "^0.8.1"
+		"svelte-maplibre": "^0.8.1",
+		"yaml": "^2.4.0"
 	}
 }

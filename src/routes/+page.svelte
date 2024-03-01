@@ -1,10 +1,26 @@
 <script lang="ts">
     import { MapLibre, NavigationControl, GeolocateControl, FullscreenControl, ScaleControl, Control, ControlGroup, ControlButton } from 'svelte-maplibre';
     import DarkMode from "svelte-dark-mode";
-    
-    let theme: any ;
+    import { parse } from 'yaml';
+    import { onMount } from 'svelte';
+	import type { Theme } from 'svelte-dark-mode/types/DarkMode.svelte';
 
-    $: switchTheme = theme === "dark" ? "light" : "dark";    
+    let theme: Theme | undefined;
+    let cards: Object[];
+
+    $: switchTheme = (theme === "dark" ? "light" : "dark") as Theme;
+    
+    onMount(async () => {
+        fetch('data/cards.yml')
+            .then(response => response.text())
+            .then(data => {
+                cards = parse(data)
+                console.log(cards)
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    });
 </script>
 
 <svelte:head>
