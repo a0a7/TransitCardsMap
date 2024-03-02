@@ -23,6 +23,15 @@
     });
 </script>
 
+<svelte:head>
+    <title>Transit Card Map</title> 
+    <meta name="description" content="Visual database of transit fare cards worldwide.">
+    <meta name="keywords" content="Transit, Transportation, Database">
+    <meta name="author" content="Alexander Akira Weimer">
+</svelte:head>
+
+<h1 class="text-[0px] font-bold">Transit Cards Map is a visual gallery database of transit (public transportation) fare cards around the world.</h1>
+
 <DarkMode bind:theme />
 
 <MapLibre 
@@ -89,9 +98,3 @@
     }
 </style>
 
-<svelte:head>
-    <title>Transit Card Map</title> 
-    <meta name="description" content="Gallery of transit fare cards worldwide.">
-    <meta name="keywords" content="Transit, Cards, Map">
-    <meta name="author" content="Alexander Akira Weimer">
-</svelte:head>
