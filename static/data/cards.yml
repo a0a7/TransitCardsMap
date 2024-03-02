@@ -104,8 +104,8 @@ orca:
   lngLat: [-122.3321, 47.6062]
 
 slkort:
-  name: SL-kortet
-  linl: https://sl.se/biljetter/sa-koper-du-biljetten/sl-kortet/
+  name: SL Travelcard
+  link: https://sl.se/en/in-english/fares--tickets/visitor-tickets/travelcards
   place: Stockholm
   issuer: SL (Stockholms Lokaltrafik)
   country: SE
