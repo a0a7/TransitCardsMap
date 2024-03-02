@@ -111,6 +111,14 @@ slkort:
   country: SE
   lngLat: [18.063240, 59.334591]
 
+oyster:
+  name: Oyster Card
+  link: https://en.wikipedia.org/wiki/Oyster_card
+  place: London
+  issuer: Transport for London
+  country: GB
+  lngLat: [-0.1276, 51.5074]
+
 troika:
   name: Troika (Тройка)
   link: https://en.wikipedia.org/wiki/Troika_card
