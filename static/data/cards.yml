@@ -7,6 +7,14 @@ metrocard:
   country: US
   lngLat: [-73.935242, 40.730610]
 
+minneapolis:
+  name: Go-To Card
+  link: https://en.wikipedia.org/wiki/Go-To_card
+  place: Minneapolis
+  issuer: Metro Transit
+  country: US
+  lngLat: [-93.2650, 44.9778]
+
 slkort:
   name: SL-kortet
   linl: https://sl.se/biljetter/sa-koper-du-biljetten/sl-kortet/
@@ -14,6 +22,38 @@ slkort:
   issuer: SL (Stockholms Lokaltrafik)
   country: SE
   lngLat: [18.063240, 59.334591]
+
+troika:
+  name: Troika (Тройка)
+  link: https://en.wikipedia.org/wiki/Troika_card
+  place: Moscow
+  issuer: Moscow Metro
+  country: RU
+  lngLat: [37.618423, 55.751244]
+
+podorozhnik:
+  name: Podorozhnik (Подорожник)
+  link: https://en.wikipedia.org/wiki/Podorozhnik
+  place: Saint Petersburg
+  issuer: Saint Petersburg Metro
+  country: RU
+  lngLat: [30.335099, 59.934280]
+
+samara:
+  name: Unified Transit Card (Eдиная транспортная карта)
+  link: https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD
+  place: Samara
+  issuer: Samarsky Metropoliten
+  country: RU
+  lngLat: [50.101783, 53.195538]
+
+minsk:
+  name: Metro Transit Ticket (Метрапалітэн Транзітны білет)
+  link: https://metropoliten.by/information/fare/
+  place: Minsk
+  issuer: Minsktrans
+  country: BY
+  lngLat: [27.561524, 53.904540]
 
 pasmo:
   name: PASMO (パスモ)
