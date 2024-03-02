@@ -1,4 +1,4 @@
-# ![Transit Card Map](https://github.com/sudolev/TransitCardsMap/assets/61996958/9afbf869-a356-4080-bda0-1f155ff9896c)
+# Transit Cards Map
 
 ### A WIP simple and accessible visual database of fare cards around the world. Use it [here](https://transitcards.pages.dev/).
 
