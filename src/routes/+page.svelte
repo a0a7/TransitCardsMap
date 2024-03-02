@@ -28,7 +28,7 @@
 <MapLibre 
   center={[15,35]}
   zoom={2}
-  class="map"
+  class="map font-varela"
   style="data/style_{theme}.json"
   let:map
 >
@@ -38,18 +38,15 @@
 
             <Popup openOn="click" offset={[0, -20]}>
                         <a href="{link}" target="_blank">
-                            <h2 class="text-xl font-bold inline">
+                            <h2 class="text-xl font-bold inline font-varela">
                                 {name}
                             </h2>
                             <img src="img/icons/outlink.svg" alt="Open in new tab" class="w-4 h-4 inline align-top" title="Open in new tab"/>
                         </a>
-                <p class="leading-none text-base">
-                    Issued by 
-                    <span class="italic">
-                        {issuer}
-                    </span>
+                <p class="leading-none text-base font-varela italic">
+                    {issuer}
                 </p>
-                <p class="leading-loose text-base">
+                <p class="leading-loose text-base font-varela">
                     {place} 
                     <span class="leading-[0rem] text-lg align-middle">
                         {getFlagEmoji(country)}
@@ -68,6 +65,11 @@
                 <img src="img/icons/switch_from_{theme}.svg" alt="Switch Theme" class="w-5 h-5" title="Switch theme"/>
             </ControlButton>
         </ControlGroup>
+    </Control>
+    <Control class="gap-y-2" position="top-right">
+        <a href="https://github.com/sudolev/TransitCardsMap" target="_blank">
+            <img src="img/icons/github.svg" alt="Github Icon" title="Open Github repo" class="w-8 h-8 text-lg font-varela w-full bg-white rounded border-[#ddd] border-[1px] px-1">
+        </a>
     </Control>
 </MapLibre>
 

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::selection {
+    background: #748C9E;
+}
+
+@layer base {
+    @font-face {
+        font-family:'VarelaRound';
+        src: url(/font/VarelaRound.ttf) format('truetype');
+        font-display: swap;
+    }    
+}
