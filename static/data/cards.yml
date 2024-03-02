@@ -262,3 +262,11 @@ cowry:
   issuer: Lagos State Government
   country: NG
   lngLat: [3.3792, 6.5244]
+
+ov-chipkaart:
+  name: OV-chipkaart
+  link: https://en.wikipedia.org/wiki/OV-chipkaart
+  place: The Netherlands
+  issuer: Trans Link Systems
+  country: NL
+  lngLat: [ 5.27936878, 52.212988 ]
