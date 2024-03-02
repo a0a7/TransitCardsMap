@@ -1,11 +1,7 @@
-# Cards:
-metrocard:
-  name: MetroCard
-  link: https://en.wikipedia.org/wiki/MetroCard
-  place: New York City
-  issuer: Metropolitan Transportation Authority (MTA)
-  country: US
-  lngLat: [-73.935242, 40.730610]
+# The card images are stored in /static/img/cards/.
+# They are 200x200px PNGs.
+# Their filenames are the same as their key here,
+# e.g. 'minneapolis' for the Go-To Card (below).
 
 minneapolis:
   name: Go-To Card
@@ -14,6 +10,14 @@ minneapolis:
   issuer: Metro Transit
   country: US
   lngLat: [-93.2650, 44.9778]
+
+metrocard:
+  name: MetroCard
+  link: https://en.wikipedia.org/wiki/MetroCard
+  place: New York City
+  issuer: Metropolitan Transportation Authority (MTA)
+  country: US
+  lngLat: [-73.935242, 40.730610]
 
 ventra:
   name: Ventra
