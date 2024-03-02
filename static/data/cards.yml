@@ -15,6 +15,94 @@ minneapolis:
   country: US
   lngLat: [-93.2650, 44.9778]
 
+ventra:
+  name: Ventra
+  link: https://en.wikipedia.org/wiki/Ventra
+  place: Chicago
+  issuer: Chicago Transit Authority (CTA)
+  country: US
+  lngLat: [-87.6298, 41.8781]
+
+clipper:
+  name: Clipper
+  link: https://en.wikipedia.org/wiki/Clipper_card
+  place: San Francisco Bay Area
+  issuer: Metropolitan Transportation Commission (MTC)
+  country: US
+  lngLat: [-122.4194, 37.7749]
+
+charlie:
+  name: CharlieCard
+  link: https://en.wikipedia.org/wiki/CharlieCard
+  place: Boston
+  issuer: Massachusetts Bay Transportation Authority (MBTA)
+  country: US
+  lngLat: [-71.0589, 42.3601]
+
+breeze:
+  name: Breeze Card
+  link: https://en.wikipedia.org/wiki/Breeze_Card
+  place: Atlanta
+  issuer: Metropolitan Atlanta Rapid Transit Authority (MARTA)
+  country: US
+  lngLat: [-84.387982, 33.748995]
+
+gopass:
+  name: GoPass Tap
+  link: https://en.wikipedia.org/wiki/Dallas_Area_Rapid_Transit
+  place: Dallas
+  issuer: Dallas Area Rapid Transit (DART)
+  country: US
+  lngLat: [-96.796988, 32.776665]
+
+holo:
+  name: Holo Card
+  link: https://en.wikipedia.org/wiki/HOLO_card
+  place: Honolulu
+  issuer: City and County of Honolulu
+  country: US
+  lngLat: [-157.8583, 21.3069]
+
+qcard:
+  name: Q Card
+  link: https://en.wikipedia.org/wiki/METRO_Q_Card
+  place: Houston
+  issuer: Metropolitan Transit Authority of Harris County (METRO)
+  country: US
+  lngLat: [-95.3698, 29.7604]
+
+tap:
+  name: Transit Access Pass
+  link: https://en.wikipedia.org/wiki/Transit_Access_Pass
+  place: Los Angeles
+  issuer: Los Angeles County Metropolitan Transportation Authority
+  country: US
+  lngLat: [-118.2437, 34.0522]
+
+smartrip:
+  name: SmarTrip
+  link: https://en.wikipedia.org/wiki/SmarTrip
+  place: Washington, D.C.
+  issuer: Washington Metropolitan Area Transit Authority (WMATA)
+  country: US
+  lngLat: [-77.0369, 38.9072]
+
+easy:
+  name: EASY Card
+  link: https://en.wikipedia.org/wiki/EASY_Card
+  place: Miami
+  issuer: Miami-Dade Transit
+  country: US
+  lngLat: [-80.1917902, 25.7616798]
+
+orca:
+  name: ORCA Card
+  link: https://en.wikipedia.org/wiki/ORCA_card
+  place: Seattle
+  issuer: Regional ORCA Operations Team
+  country: US
+  lngLat: [-122.3321, 47.6062]
+
 slkort:
   name: SL-kortet
   linl: https://sl.se/biljetter/sa-koper-du-biljetten/sl-kortet/
@@ -150,3 +238,19 @@ manaca:
   issuer: City of Nagoya Transportation Bureau
   country: JP
   lngLat: [136.95853578715864, 35.27267615632285]
+
+tapgo:
+  name: Tap & Go
+  link: https://www.acgroup.rw/?page_id=26
+  place: Kigali
+  issuer: AC Group/Asis
+  country: RW
+  lngLat: [30.0587, -1.9441]
+
+cowry:
+  name: Cowry Card
+  link: https://commons.wikimedia.org/wiki/File:Cowry_card_Lagos.jpg
+  place: Lagos
+  issuer: Lagos State Government
+  country: NG
+  lngLat: [3.3792, 6.5244]
