@@ -48,7 +48,7 @@
                 </p>
                 <p class="leading-loose text-base font-varela px-2">
                     {place} 
-                    <span class="leading-[0rem] text-lg align-middle">
+                    <span class="leading-[0rem] text-lg align-middle" title="{country}">
                         {getFlagEmoji(country)}
                     </span>
                 </p>
