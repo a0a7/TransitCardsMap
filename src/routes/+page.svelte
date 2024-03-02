@@ -4,9 +4,10 @@
     import { parse } from 'yaml';
     import { onMount } from 'svelte';
 	import type { Theme } from 'svelte-dark-mode/types/DarkMode.svelte';
+    import { getFlagEmoji } from '$lib/utils';
 
     let theme: Theme | undefined;
-    let cards: { name: string, link: string, place: string, issuer: string, lngLat: [number, number] }[];
+    let cards: { name: string, link: string, place: string, issuer: string, country: string, lngLat: [number, number] }[];
 
     $: switchTheme = (theme === "dark" ? "light" : "dark") as Theme;
     
@@ -15,20 +16,12 @@
             .then(response => response.text())
             .then(data => {
                 cards = parse(data)
-                console.log(cards)
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
     });
 </script>
-
-<svelte:head>
-    <title>Transit Card Map</title> 
-    <meta name="description" content="Gallery of transit fare cards worldwide.">
-    <meta name="keywords" content="Transit, Cards, Map">
-    <meta name="author" content="Alexander Akira Weimer">
-</svelte:head>
 
 <DarkMode bind:theme />
 
@@ -39,15 +32,30 @@
   style="data/style_{theme}.json"
   let:map
 >
-    {#each Object.entries(cards) as [id, { name, link, place, issuer, lngLat }]} 
+    {#each Object.entries(cards) as [id, { name, link, place, issuer, country, lngLat }]} 
         <Marker {lngLat} class="w-14 h-14" >
             <img src="img/cards/{id}.png" alt="{name}" class="drop-shadow-xl">
 
             <Popup openOn="click" offset={[0, -20]}>
-                <a href="{link}" target="_blank">
-                    <h2 class="text-xl font-bold">{name}</h2>
-                </a>
-                <p class="text-md italic">{place}</p>
+                        <a href="{link}" target="_blank">
+                            <h2 class="text-xl font-bold inline">
+                                {name}
+                            </h2>
+                            <img src="img/icons/outlink.svg" alt="Open in new tab" class="w-4 h-4 inline align-top" title="Open in new tab"/>
+                        </a>
+                <p class="leading-none text-base">
+                    Issued by 
+                    <span class="italic">
+                        {issuer}
+                    </span>
+                </p>
+                <p class="leading-loose text-base">
+                    {place} 
+                    <span class="leading-[0rem] text-lg align-middle">
+                        {getFlagEmoji(country)}
+                    </span>
+                </p>
+
             </Popup>
         </Marker>
     {/each}
@@ -68,3 +76,10 @@
       height: 100vh;
     }
 </style>
+
+<svelte:head>
+    <title>Transit Card Map</title> 
+    <meta name="description" content="Gallery of transit fare cards worldwide.">
+    <meta name="keywords" content="Transit, Cards, Map">
+    <meta name="author" content="Alexander Akira Weimer">
+</svelte:head>

@@ -3,7 +3,8 @@ metrocard:
   name: MetroCard
   link: https://en.wikipedia.org/wiki/MetroCard
   place: New York City
-  issuer: MTA
+  issuer: Metropolitan Transportation Authority (MTA)
+  country: US
   lngLat: [-73.935242, 40.730610]
 
 slkort:
@@ -11,6 +12,7 @@ slkort:
   linl: https://sl.se/biljetter/sa-koper-du-biljetten/sl-kortet/
   place: Stockholm
   issuer: SL (Stockholms Lokaltrafik)
+  country: SE
   lngLat: [18.063240, 59.334591]
 
 pasmo:
@@ -18,6 +20,7 @@ pasmo:
   link: https://en.wikipedia.org/wiki/Pasmo
   place: Greater Tokyo Area
   issuer: JR East
+  country: JP
   lngLat: [139.839478, 35.652832]
 
 nimoca:
@@ -25,6 +28,7 @@ nimoca:
   link: https://en.wikipedia.org/wiki/Nimoca
   place: Fukuoka
   issuer: Nishi-Nippon Railroad
+  country: JP
   lngLat: [130.39716772915006, 33.673867398225106]
 
 suica:
@@ -32,6 +36,7 @@ suica:
   link: https://en.wikipedia.org/wiki/Suica
   place: Tokyo, Sendai & Niigata 
   issuer: JR East
+  country: JP
   lngLat: [140.869415, 38.268223]
 
 icoca:
@@ -39,6 +44,7 @@ icoca:
   link: https://en.wikipedia.org/wiki/ICOCA
   place: Kansai
   issuer: JR West
+  country: JP
   lngLat: [135.502165, 34.693738]
 
 toica:
@@ -46,6 +52,7 @@ toica:
   link: https://en.wikipedia.org/wiki/TOICA
   place: Nagoya
   issuer: JR Central
+  country: JP
   lngLat: [136.90641, 35.18147]
 
 sugoca:
@@ -53,6 +60,7 @@ sugoca:
   link: https://en.wikipedia.org/wiki/SUGOCA
   place: Fukuoka
   issuer: JR Kyushu
+  country: JP
   lngLat: [130.65738228347203, 33.59753694045956]
 
 hayakaken:
@@ -60,6 +68,7 @@ hayakaken:
   link: https://en.wikipedia.org/wiki/Hayakaken
   place: Fukuoka
   issuer: Fukuoka City Transportation Bureau
+  country: JP
   lngLat: [130.23696169822304, 33.58475268101628]
 
 kitaca:
@@ -67,6 +76,7 @@ kitaca:
   link: https://en.wikipedia.org/wiki/Kitaca
   place: Hokkaido
   issuer: JR Hokkaido
+  country: JP
   lngLat: [141.34694, 43.06417]
 
 pitapa:
@@ -74,6 +84,7 @@ pitapa:
   link: https://en.wikipedia.org/wiki/PiTaPa
   place: Kansai
   issuer: Surutto KANSAI Conference
+  country: JP
   lngLat: [135.74378490952535, 34.970678047024194] 
 
 nicepass:
@@ -81,6 +92,7 @@ nicepass:
   link: https://en.wikipedia.org/wiki/NicePass
   place: Hamamatsu
   issuer: Enshū Railway
+  country: JP
   lngLat: [137.7123767702264, 34.73984767075227]
 
 luluca:
@@ -88,6 +100,7 @@ luluca:
   link: https://en.wikipedia.org/wiki/LuLuCa
   place: Shizuoka
   issuer: Shizuoka Railway Group
+  country: JP
   lngLat: [138.38560374357326, 34.97288055273272]
 
 manaca:
@@ -95,4 +108,5 @@ manaca:
   link: https://en.wikipedia.org/wiki/Manaca
   place: Nagoya
   issuer: City of Nagoya Transportation Bureau
+  country: JP
   lngLat: [136.95853578715864, 35.27267615632285]
