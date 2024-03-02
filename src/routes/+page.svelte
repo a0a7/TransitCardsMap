@@ -66,8 +66,8 @@
         </ControlGroup>
     </Control>
     <Control class="gap-y-2" position="top-right">
-        <a href="https://github.com/sudolev/TransitCardsMap" target="_blank">
-            <img src="img/icons/github.svg" alt="Github Icon" title="Open Github repo" class="w-8 h-8 text-lg font-varela w-full bg-white rounded border-[#ddd] border-[1px] p-1">
+        <a href="https://github.com/sudolev/TransitCardsMap" target="_blank" class="githublogo font-bold text-lg font-varela w-full bg-white rounded border-[#ddd] border-[1px] p-1">
+            <img src="img/icons/github.svg" alt="Github Icon" title="Open Github repo" class="inline w-6 h-6">
         </a>
     </Control>
 </MapLibre>
@@ -75,6 +75,17 @@
 <style>
     :global(.map) {
       height: 100vh;
+    }
+
+    @media (min-width: 1024px) {
+        .githublogo::before {
+            content: "Open Git Repository";
+            padding-right: 6px;
+            display: none;
+        }
+        .githublogo:hover::before {
+            display: inline;
+        }
     }
 </style>
 
