@@ -33,26 +33,25 @@
   let:map
 >
     {#each Object.entries(cards) as [id, { name, link, place, issuer, country, lngLat }]} 
-        <Marker {lngLat} class="w-14 h-14" >
-            <img src="img/cards/{id}.png" alt="{name}" class="drop-shadow-xl">
-
-            <Popup openOn="click" offset={[0, -20]}>
-                        <a href="{link}" target="_blank">
-                            <h2 class="text-xl font-bold inline font-varela">
-                                {name}
-                            </h2>
-                            <img src="img/icons/outlink.svg" alt="Open in new tab" class="w-4 h-4 inline align-top" title="Open in new tab"/>
-                        </a>
-                <p class="leading-none text-base font-varela italic">
+        <Marker {lngLat} class="w-14 h-14 hover:z-10" >
+            <img src="img/cards/{id}.png" alt="{name}" class="drop-shadow-xl hover:scale-[2] transition-all duration-[125ms]">
+            
+            <Popup openOn="click" offset={[0, -35]}>
+                <a href="{link}" target="_blank" class="px-2">
+                    <h2 class="text-xl font-bold inline font-varela">
+                        {name}
+                    </h2>
+                    <img src="img/icons/outlink.svg" alt="Open in new tab" class="w-4 h-4 inline align-top" title="Open in new tab"/>
+                </a>
+                <p class="leading-none text-base font-varela italic px-2">
                     {issuer}
                 </p>
-                <p class="leading-loose text-base font-varela">
+                <p class="leading-loose text-base font-varela px-2">
                     {place} 
                     <span class="leading-[0rem] text-lg align-middle">
                         {getFlagEmoji(country)}
                     </span>
                 </p>
-
             </Popup>
         </Marker>
     {/each}
