@@ -67,7 +67,7 @@
     </Control>
     <Control class="gap-y-2" position="top-right">
         <a href="https://github.com/sudolev/TransitCardsMap" target="_blank">
-            <img src="img/icons/github.svg" alt="Github Icon" title="Open Github repo" class="w-8 h-8 text-lg font-varela w-full bg-white rounded border-[#ddd] border-[1px] px-1">
+            <img src="img/icons/github.svg" alt="Github Icon" title="Open Github repo" class="w-8 h-8 text-lg font-varela w-full bg-white rounded border-[#ddd] border-[1px] p-1">
         </a>
     </Control>
 </MapLibre>
