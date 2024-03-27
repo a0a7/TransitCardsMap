@@ -274,3 +274,67 @@ ov-chipkaart:
   issuer: Trans Link Systems
   country: NL
   lngLat: [ 5.27936878, 52.212988 ]
+
+arc:
+  name: Arc
+  link: https://en.wikipedia.org/wiki/Arc_card
+  place: Edmonton
+  issuer: City of Edmonton
+  country: CA
+  lngLat: [-113.4909, 53.5444]
+
+bilhete-unico:
+  name: Bilhete Único
+  link: https://en.wikipedia.org/wiki/Bilhete_%C3%9Anico
+  place: São Paulo
+  issuer: São Paulo State Government
+  country: BR
+  lngLat: [-46.6333, -23.5505]
+
+rj:
+  name: RioCard
+  link: https://en.wikipedia.org/wiki/RioCard
+  place: Rio de Janeiro
+  issuer: Rio de Janeiro State Government
+  country: BR
+  lngLat: [-43.1729, -22.9068]
+
+compass:
+  name: Compass Card
+  link: https://en.wikipedia.org/wiki/Compass_Card
+  place: Vancouver
+  issuer: TransLink
+  country: CA
+  lngLat: [-123.1207, 49.2827]
+
+presto:
+  name: PRESTO
+  link: https://en.wikipedia.org/wiki/PRESTO_card
+  place: Toronto
+  issuer: Metrolinx
+  country: CA
+  lngLat: [-79.3832, 43.6532]
+
+opus:
+  name: OPUS
+  link: https://en.wikipedia.org/wiki/Opus_card
+  place: Montréal
+  issuer: STM
+  country: CA
+  lngLat: [-73.5673, 45.5017]
+
+sube:
+  name: SUBE
+  link: https://en.wikipedia.org/wiki/SUBE
+  place: Buenos Aires
+  issuer: Argentine Ministry of Transport
+  country: AR
+  lngLat: [-58.3816, -34.6037]
+
+vem:
+  name: Trabalhador
+  link: https://en.wikipedia.org/wiki/Vem
+  place: Recife
+  issuer: CBTU
+  country: BR
+  lngLat: [-34.8813, -8.0476]
