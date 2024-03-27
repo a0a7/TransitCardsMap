@@ -346,3 +346,11 @@ t-go:
   issuer: City of Saskatoon
   country: CA
   lngLat: [-106.6626, 52.1332]
+
+myride:
+  name: MyRide
+  link: https://www.rtd-denver.com/fares-passes/myride
+  place: Denver
+  issuer: Regional Transportation District (RTD)
+  country: US
+  lngLat: [-104.9903, 39.7392]
