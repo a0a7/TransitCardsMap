@@ -338,3 +338,11 @@ vem:
   issuer: CBTU
   country: BR
   lngLat: [-34.8813, -8.0476]
+
+t-go:
+  name: GoPass 
+  link: https://transit.saskatoon.ca/fares-passes
+  place: Saskatoon
+  issuer: City of Saskatoon
+  country: CA
+  lngLat: [-106.6626, 52.1332]
