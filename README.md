@@ -1,6 +1,8 @@
 # Transit Cards Map
 
-### A WIP simple and accessible visual database of fare cards around the world. Use it [here](https://transitcards.pages.dev/).
+![image](https://github.com/user-attachments/assets/701da655-635d-406e-a810-cfd23d7771ec)
+
+### A simple and accessible visual database of fare cards around the world. Use it [here](https://transitcards.pages.dev/).
 
 ## Features
 
